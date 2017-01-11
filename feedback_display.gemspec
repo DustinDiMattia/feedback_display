@@ -10,4 +10,8 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/DustinDiMattia/feedback_display'
   s.license     = 'Free to use so long as you do not attribute this mess to me.'
   s.executables = ["feedback_display"]
+  s.add_runtime_dependency 'sinatra'
+  s.add_runtime_dependency 'sequel'
+  s.add_runtime_dependency 'pg'
+  s.add_runtime_dependency 'dotenv'
 end
