@@ -5,6 +5,8 @@ Dotenv.load
 
 class FeedbackDisplay < Sinatra::Base
 
+  set :port, 3333
+
   before do
     username = ENV['USERNAME']
     password = ENV['PASSWORD']
