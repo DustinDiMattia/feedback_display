@@ -1,0 +1,24 @@
+<head></head>
+<body>
+  <h3>Feedback Messages</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Topic</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for @message in @feedback_messages %>
+        <tr>
+          <td><%= @message[:name] %></td>
+          <td><%= @message[:email_address] %></td>
+          <td><%= @message[:topic] %></td>
+          <td><%= @message[:description] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</body>
